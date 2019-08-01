@@ -115,12 +115,10 @@ function onGetResponse(err, res) {
 }
 
 function renderNews(newsItems) {
-  console.log(newsItems);
   let fragment = "";
 
   newsItems.forEach(item => {
     const el = newsTemplate(item);
-
     fragment += el;
   });
 
